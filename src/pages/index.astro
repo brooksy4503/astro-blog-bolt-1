@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to My Blog">
+  <h1>Welcome to My Blog</h1>
+  <p>This is a simple blog built with Astro. Check out our latest posts in the blog section!</p>
+  <div class="cta">
+    <a href="/blog">Read Blog Posts</a>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .cta {
+    margin-top: 2rem;
+  }
+
+  .cta a {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .cta a:hover {
+    background: var(--accent-dark);
+  }
+</style>
